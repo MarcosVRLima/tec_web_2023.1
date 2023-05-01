@@ -9,7 +9,7 @@ body {
 }
 
 .conteudo {
-    margin: 25px 60px 10px 30px;
+    margin: 25px 30px 10px 30px;
 }
 
 /* #logo {
@@ -19,7 +19,6 @@ body {
 
 .cabecalho {
     width: 100%;
-    padding: 10px;
     border: 2px solid;
 }
 
@@ -67,7 +66,75 @@ header a:hover {
     height: 100%;
 }
 
+/* navbar */
 
+.conteudo nav{
+    width: 100%;
+    background-color: #f2f2f2;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+#navbar{
+    width: 100%;
+    display: flex;
+    padding: 10px 0 10px 0;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#navbar li{
+    list-style: none;
+    margin: 10px;
+}
+
+form {
+    color: #555;
+    display: flex;
+    padding: 2px;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+}
+
+input[type="search"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+}
+
+input[type="search"]::placeholder {
+    color: #bbb;
+}
+
+button[type="submit"] {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent url("./search.svg") no-repeat center;
+    cursor: pointer;
+    opacity: 0.7;
+}
+  
+button[type="submit"]:hover {
+    opacity: 1;
+}
+
+button[type="submit"]:focus,
+input[type="search"]:focus {
+  box-shadow: 0 0 3px 0 #1183d6;
+  border-color: #1183d6;
+  outline: none;
+}
 
 .idioma {
     display: inline-block;
@@ -106,6 +173,20 @@ header a:hover {
     color: #333;
 }
 
+/* carrousel */
+
+#carrousel{
+    width: 100%;
+    background-color: #f2f2f2;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+figure img{
+    width: 100%;
+    border-radius: 10px;
+    margin: 25px 0 25px 0;
+}
 
 @media screen and (max-width: 480px) {
     .coluna{
@@ -140,7 +221,6 @@ header a:hover {
     }
     .coluna-centro{
         flex-direction: column;
-        align-items: center;
         width: 70%;
     }
     .coluna-direita{
