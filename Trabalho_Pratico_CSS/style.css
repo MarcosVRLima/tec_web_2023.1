@@ -3,11 +3,13 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
-    background-color: blanchedalmond;
+    background-color: lightgray;
+    font-family: 'Righteous';
+    text-shadow: 2px 2px white;
 }
 
 .conteudo {
-    margin: 25px 50px 10px 50px;
+    margin: 25px 60px 10px 30px;
 }
 
 /* #logo {
@@ -30,11 +32,16 @@ body {
 }
 
 .coluna-esquerda {
-    width: 20% !important;
+    width: 20%;
+}
+
+#logo img{
+    height: 100%;
+    width: 100%;
 }
 
 .coluna-centro {
-    width: 50% !important;
+    width: 50%;
 }
 
 /* Clear floats after the columns */
@@ -78,7 +85,8 @@ header a:hover {
 
 .idioma:hover {
     background-color: #999;
-    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px white;
 }
 
 .links-cabecalho {
@@ -98,7 +106,49 @@ header a:hover {
     color: #333;
 }
 
-.idioma:hover {
-    background-color: #999;
-    color: #fff;
+
+@media screen and (max-width: 480px) {
+    .coluna{
+        display: flex;
+        float: left;
+        width: 100%;
+        padding: 10px;
+    }
+    .coluna-esquerda{
+        justify-content: center;
+    }
+    .coluna-centro{
+        flex-direction: column;
+        align-items: center;
+    }
+    .coluna-direita{
+        flex-direction: column;
+        align-items: center;
+    }
+    .idioma{
+        margin-bottom: 10px;
+    }
+
+    #logo img{
+        height: 125px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .coluna{
+        display: flex;
+    }
+    .coluna-centro{
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+    }
+    .coluna-direita{
+        display: flex;
+        width: 100%;
+    } 
+
+    .links-cabecalho{
+        display: contents;
+    }
 }
