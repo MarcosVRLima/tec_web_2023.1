@@ -12,17 +12,11 @@ body {
     margin: 25px 30px 10px 30px;
 }
 
-/* #logo {
-    width: 200px !important;
-    height: 200px !important;
-} */
-
 .cabecalho {
     width: 100%;
     border: 2px solid;
 }
 
-/* Define the three columns */
 .coluna {
     float: left;
     width: 30%;
@@ -186,6 +180,51 @@ figure img{
     width: 100%;
     border-radius: 10px;
     margin: 25px 0 25px 0;
+}
+
+.informacoes {
+    display: flex;
+    gap: 10px;
+}
+
+.historia {
+    border-style: ridge;
+    width: 70%;
+}
+
+.historia header {
+    background: #f2f2f2;
+    font-size: 18pt;
+    border-style: outset;
+    margin: 2px;
+    padding: 10px 2px 10px;
+
+}
+
+.historia section {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+.historia section p {
+    padding: 20px;
+
+}
+
+.historia footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.historia footer button {
+    margin: 10px;
+}
+
+.lateral {
+    display: inline-block;
+    width: 30%;
 }
 
 @media screen and (max-width: 480px) {
