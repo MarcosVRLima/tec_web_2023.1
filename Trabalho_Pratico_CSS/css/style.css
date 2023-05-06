@@ -114,7 +114,7 @@ button[type="submit"] {
     margin: 0;
     border: 1px solid transparent;
     border-radius: inherit;
-    background: transparent url("./search.svg") no-repeat center;
+    background: transparent url("./../images/search.svg") no-repeat center;
     cursor: pointer;
     opacity: 0.7;
 }
