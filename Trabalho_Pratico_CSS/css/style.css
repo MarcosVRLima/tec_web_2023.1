@@ -73,7 +73,7 @@ header a:hover {
 }
 
 #navbar{
-    width: 10   0%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
